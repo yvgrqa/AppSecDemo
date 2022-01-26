@@ -31,13 +31,13 @@ jobs:
       uses: ./ # Uses an action in the root directory
       id: upload_and_scan
       with:
-        appname: '${{ github.repository }}'
+        appname: 'Components'
         version: '${{ github.run_id }}'
         filepath: 'binaries_to_upload/*.jar'
-        vid: '${{ secrets.VERACODE_API_ID }}'
-        vkey: '${{ secrets.VERACODE_API_KEY }}'
+        vid: '55da4db3450e3fdfa8021a491c2eb0a4'
+        vkey: '6893bc44e5991ae48452cc7161eb0fc7666bce200473aa48182cf1bd66428a3e651649ad64547e194fbb27ebb4fb6de0a59a0c5df1a26c3a606b4410fdc5bdc2'
         createsandbox: true
-        sandboxname: 'Github - ${{ github.ref }}'
-        scantimeout: 15
-        criticality: 'VeryHigh'
+        sandboxname: 'GITTEST'
+        scantimeout: 60
+        criticality: 'Medium'
 
