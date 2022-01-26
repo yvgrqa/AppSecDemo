@@ -68,3 +68,7 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+      
+    - name: Veracode Upload And Scan
+      uses: veracode/veracode-uploadandscan-action@0.2.1
+
